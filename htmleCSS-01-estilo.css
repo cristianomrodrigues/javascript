@@ -1,0 +1,75 @@
+@charset "UTF-8"
+
+body {
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding:0px;
+}
+
+li a {
+    display: block;
+    width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    li {
+display: inline;
+float: left;
+    }
+
+    #menu ul li a {
+    display: inline-block;
+      
+    
+}
+
+/*********ESTADOS MENU LINK*******/
+
+#menu a:hover {
+    text-decoration-style: double;
+}
+
+/*********GRANDES SEÇÕES*******/
+
+header, nav, section, aside {
+    padding: 10px;
+    margin: 5px;
+}
+
+header {
+    background-color: aquamarine;
+    border: solid 2px; #806868;
+}
+
+nav {
+    background-color: beige;
+    display: inline-block;
+    border: solid 2px; #806868;
+}
+
+.container {
+    display: flex; //propriedade pai de "section" e "aside" abaixo
+    flex-direction: row; //divs em forma de linha, esse é o padrão
+    width: 100%;
+    border: solid 2px; #806868;
+}
+
+section {
+    background-color: brown;
+    width: 60%;
+    border: solid 2px; #806868;
+}
+
+aside {
+    background-color: blue;
+    width: 30%;
+    border: solid 2px; #806868;
+}
+
+footer {
+    background-color: bisque;
+    border: solid 2px; #806868;
+}

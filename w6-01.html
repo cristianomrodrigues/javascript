@@ -1,0 +1,29 @@
+<!-- window.prompt com retorno de true or false com condicional if-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w6-01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <button type="button" id="btdesligar" on-click="desligar()">Desligar lampada</button>
+        <img id="lampada" src="lampada-apagada.gif" alt="lampada apagada">
+        <button type="button" id="btligar" on-click="ligar()">Ligar lampada</button>
+        <script>
+
+            function desligar() {
+                window.document.getElementById('lampada').scr="lampada-apagada.gif";
+            }
+            function ligar() {
+                window.document.getElementById('lampada').scr="lampada-acesa.gif";
+            }
+        </script>
+</body>
+
+</html>

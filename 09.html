@@ -1,0 +1,27 @@
+<!-- Mudança de estado do botão com getElementByID -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>09</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <top class="bc1">
+        <h1 class="titulo">Mudança estado botão</h1>
+        <p>Clique no botão</p>
+        <button id="bt1" onclick=clicar()>Clique aqui!</button> <!--botão de id bt1 com ação onclick com função clicar()-->
+        <script>
+            function clicar() { // incio da função clicar()
+                var a = window.document.getElementById('bt1') // variável a recebe id do botão com getElementById
+                a.innerText = 'Você Clicou!' // variável a muda texto interno do botão para 'Você clicou'
+            }
+        </script>
+    </top>
+</body>
+
+</html>

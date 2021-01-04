@@ -1,0 +1,25 @@
+<!-- window.prompt com retorno de true or false com condicional if-->
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>w5-01</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <p id="mostrar"></p>
+<script>
+    var msg = window.prompt('Este é um alerta com meu nome:', 'Cristiano') // ao clicar ok, é retornado true para a var msg
+    var resposta = ""
+    if (msg) {
+        resposta = ("Você confirmou que é " + msg)
+        document.getElementById("mostrar").innerHTML = resposta
+    } else {
+        resposta = ("Você não é Cristiano!")
+        document.getElementById("mostrar").innerHTML = resposta
+    }
+    </script>
+</body>
+</html>

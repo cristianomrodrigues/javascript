@@ -1,0 +1,21 @@
+<!--Usar window.prompt para coletar dado dentro de variavel e somar valores-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class= titulo>Somar valores por window.prompt</h1>
+    <p>A soma aparece por windows.alert na tela</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Digite o numero 1: "));
+        var n2 = Number.parseInt(window.prompt("Digite o numero 2: "));
+        var s = n1 + n2;
+        window.alert("A soma deu: " + s);
+    </script>
+</body>
+</html>

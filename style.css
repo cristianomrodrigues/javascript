@@ -1,0 +1,50 @@
+@charset "UTF-8";
+body {
+    background-color: blueviolet;
+    font-size: 14px;
+    
+}
+
+h1.titulo {
+    color: brown;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-style: solid;
+    border-radius:10px;
+    font-size: 24px;
+    background-color: cornflowerblue;
+}
+
+p {
+    color:rgb(255, 106, 0);
+}
+top.bc1 {
+    display: inline-block;
+    width:40%;
+    float:left;
+    padding: 10px;
+    text-align: center;
+    border-style: dotted;
+    border-radius: 10px;
+}
+
+top.bc2 {
+    display: inline-block;
+    width:40%;
+    padding: 10px;
+    text-align: center;
+    border-style: dotted;
+    border-radius: 10px;
+}
+
+input[type=button], button[type=button], button {
+    font-size: 14px;
+    margin: 4px 2px;
+    padding: 8px 25px;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+.toUpperCase {
+    text-decoration: aqua;
+}

@@ -1,0 +1,31 @@
+<!-- Somando valores em javascript por getElementById -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10-02</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class=titulo>Somando valores</h1>
+    <input type="number" name="texto1" id="texto1"><br> <!--cria box para inserção de um valor-->
+    <input type="number" name="texto2" id="texto2"><br> <!--cria box para inserção de outro valor-->
+    <input class="bt1" type="button" value="Somar" onclick="somar()"> <!--cria botão que dispara evento onclick executando função somar()-->
+    <div id="res">O resultado aparecerá aqui!</div> <!--criação de div que exibirá resultado sendo capturada no javascript por get.ElementById-->
+
+   <script>
+function somar () {
+    var tn1 = window.document.getElementById('texto1') // pega id texto1 e joga na var tn1
+    var tn2 = window.document.getElementById('texto2') //pega id texto2 e joga na var tn2
+    var res = window.document.getElementById('res') //pega id res e joga na var res
+    var n1 = Number(tn1.value) //passa tn1 para number
+    var n2 = Number(tn2.value) //passa tn2 para number
+    var s = n1 + n2
+    res.innerHTML = ('A soma entre os numeros é ' + s)
+
+}
+    </script>
+</body>
+</html>

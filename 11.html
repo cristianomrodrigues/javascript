@@ -1,0 +1,35 @@
+<!-- Verificar sistema  de multas com função calcular() em onclick -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class=titulo>Sistema de multas</h1>
+    <p>Digite a velicidade do carro em Km/h: </p>
+  <input type="number" name="txtvel "id="txtvel"> km/h <br>
+  <input type="button" value="Verificar" onclick="calcular()">
+
+  <div id="res">
+        O resultador aparecerá aqui!
+  </div>
+
+   <script>
+function calcular () {
+    var txtv = window.document.getElementById('txtvel')
+    var res = window.document.querySelector('div#res')
+    var vel = Number(txtv.value)
+    res.innerHTML = ('Sua velocidade atual é de: ' + vel)
+    if (vel > 60) {
+        res.innerHTML += ('Voce esta multado por velocidade alta!')
+    }
+res.innerHTML += ('Use o cinto de segurança!')
+    
+}
+    </script>
+</body>
+</html>

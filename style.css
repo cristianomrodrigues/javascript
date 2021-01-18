@@ -16,6 +16,7 @@ background: linear-gradient(278deg, rgba(232,92,131,1) 0%, rgba(190,186,139,1) 6
 
 .container_item {
   max-width: 200px;
+  min-width: 200px;
   padding: 5px;
   margin: 5px;
   /*------ efeito glass ------*/

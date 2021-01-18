@@ -1,50 +1,77 @@
-@charset "UTF-8";
-body {
-    background-color: blueviolet;
-    font-size: 14px;
-    
+:root {
+  font-size: 16px;
 }
 
-h1.titulo {
-    color: brown;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    border-style: solid;
-    border-radius:10px;
-    font-size: 24px;
-    background-color: cornflowerblue;
+html {
+  background-image: url(./gradiente-bg01.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container_item {
+  max-width: 200px;
+  padding: 5px;
+  margin: 5px;
+  /*------ efeito glass ------*/
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.0625rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.875rem;
 }
 
 p {
-    color:rgb(255, 106, 0);
-}
-top.bc1 {
-    display: inline-block;
-    width:40%;
-    float:left;
-    padding: 10px;
-    text-align: center;
-    border-style: dotted;
-    border-radius: 10px;
+  font-size: 0.8125rem;
+  font-family: "Open Sans", sans-serif;
 }
 
-top.bc2 {
-    display: inline-block;
-    width:40%;
-    padding: 10px;
-    text-align: center;
-    border-style: dotted;
-    border-radius: 10px;
+p.alinha {
+    margin-top: auto;
 }
 
-input[type=button], button[type=button], button {
-    font-size: 14px;
-    margin: 4px 2px;
-    padding: 8px 25px;
-    cursor: pointer;
-    border-radius:5px;
-}
+/*------ Botão ------ */
 
-.toUpperCase {
-    text-decoration: aqua;
+.button {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.button:hover {
+  background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  background-color: #dfdfdf;
+}
+.button:active {
+  position: relative;
+  top: 1px;
 }
